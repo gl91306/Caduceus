@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calendar</title>
+    <link rel="stylesheet" href="calander.css" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Product+Sans"/>
+  </head>
+  <body>
+    <div class="box-area">
+      <header>
+        <div class="wrapper">
+          <div class="logo">
+            <a href="#">Caduceus</a>
+          </div>
+          <nav>
+            <a href="http://localhost:5000/">Home</a>
+            <a href="#">Calendar</a>
+          </nav>
+        </div>
+      </header>
+      <div class="banner-area">
+        <h2>Today is April 25, 2021</h2>
+        <p>Set a reminder!</p>
+      </div>
+    <div class="content-area">
+      <div class="calendar">
+        <div class="year"></div>
+        <div class="month">
+          <ul>
+            <li class="prev">
+              <a href="javascript:void(0);" onclick="prevmonth();">&#10094;</a>
+              <a>previous month</a>
+            </li>
+            <li class="next">
+                <a>next month</a>
+              <a href="javascript:void(0);" onclick="nextmonth();">&#10095;</a>
+            </li>
+            <li id="monthname">April</li>
+            <br />
+            <span style="font-size: 18px; color: white" id="year">2021</span>
+          </ul>
+        </div>
+        <div class="weekdays">
+          <li>Sun</li>
+          <li>Mon</li>
+          <li>Tue</li>
+          <li>Wed</li>
+          <li>Thu</li>
+          <li>Fri</li>
+          <li>Sat</li>
+        </div>
+        <div class="days">
+          <li id="day1"></li>
+          <li id="day2"></li>
+          <li id="day3"></li>
+          <li id="day4"></li>
+          <li id="day5"></li>
+          <li id="day6"></li>
+          <li id="day7"></li>
+          <li id="1">1</li>
+          <li id="2">2</li>
+          <li id="3">3</li>
+          <li id="4">4</li>
+          <li id="5">5</li>
+          <li id="6">6</li>
+          <li id="7">7</li>
+          <li id="8">8</li>
+          <li id="9">9</li>
+          <li id="10">10</li>
+          <li id="11">11</li>
+          <li id="12">12</li>
+          <li id="13">13</li>
+          <li id="14">14</li>
+          <li id="15">15</li>
+          <li id="16">16</li>
+          <li id="17">17</li>
+          <li id="18">18</li>
+          <li id="19">19</li>
+          <li id="20">20</li>
+          <li id="21">21</li>
+          <li id="22">22</li>
+          <li id="23">23</li>
+          <li id="24">24</li>
+          <li id="25">25</li>
+          <li id="26">26</li>
+          <li id="27">27</li>
+          <li id="28">28</li>
+          <li id="29">29</li>
+          <li id="30">30</li>
+          <li id="31">31</li>
+        </div>
+      </div>
+    <div class="confirmation">
+        <h2>
+          Click on the date you would like to set a reminder for.<br />
+          Then, click confirm.
+        </h2>
+        <div class="cbtn1">
+          <a href="javascript:void(0);" onclick="createvent();"><h1>Create Event</h1></a>
+        </div>
+        <div class="cbtn">
+          <h1>Confirm</h1>
+        </div>
+    </div>
+    
+    
+    <div id="eventbody" style="display: none;">
+      
+      <br>
+      <h1>What is the Name of your event?</h1>
+      <input type="text" id="eventname" value="Enter name here">
+      <h1>What is the Description of your event?</h1>
+      <input type="text" id="eventdes" value="Enter decription here">
+      <h1>What date would you like to schedule your event on?</h1>
+      <input type="date" id="eventdate" value="Enter date here">
+      <h1>What time would you like to schedule your event on?</h1>
+      <input type="time" id="eventtime" value="Enter time here">
+      <br>
+      <br>
+      <button type="submit" onclick="grabdata()">Submit</button>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      
+      <button onclick="hideevent();">Exit</button>
+    </div>   
+
+    <script src="calander.js"></script>
+  </body>
+</html>

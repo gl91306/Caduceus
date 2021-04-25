@@ -1,0 +1,248 @@
+ul {
+    list-style-type: none;
+  }
+  
+  body {
+    font-family: "Product Sans";
+    background-color: white;
+  }
+  
+  h2 {
+    font-family: "Product Sans";
+    text-align: center;
+    color: rgb(80, 80, 80);
+    font-size: 25px;
+    letter-spacing: 0.5px;
+  }
+  
+  p {
+    font-family: "Product Sans";
+    text-align: center;
+    color: rgb(80, 80, 80);
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+  
+  .cbtn {
+    background: white;
+    width: 175px;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 30px auto;
+    text-transform: uppercase;
+    color: black;
+  }
+  
+  .cbtn h1 {
+    font-size: 30px;
+  }
+  .cbtn1 {
+    background: white;
+    width: 250px;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 30px auto;
+    text-transform: uppercase;
+    color: black;
+  }
+  .cbtn1 h1 {
+    font-size: 30px;
+  }
+  
+  .calendar {
+    width: 100%;
+    border-radius: 0;
+    height: auto;
+    margin: 0 auto;
+  }
+  /* Month header */
+  .month {
+    padding: 25px 0px;
+    width: 100%;
+    background: #c4599b;
+  }
+  
+  /* Month list */
+  .month ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .month ul li {
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-left: 50px;
+  }
+  
+  /* Previous button inside month header */
+  .month .prev {
+    float: left;
+    padding-top: 10px;
+    margin-left: 20px;
+    color: white;
+    font-size: 20px;
+  }
+  
+  /* Next button */
+  .month .next {
+    float: right;
+    padding-top: 10px;
+    margin-right: 20px;
+    color: white;
+    font-size: 20px;
+  }
+  
+  /* Weekdays (Mon-Sun) */
+  .weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color: rgb(250, 153, 206);
+    width: 100%;
+  }
+  
+  .weekdays li {
+    display: inline-block;
+    width: 13.5%;
+    color: #c4599b;
+    text-align: center;
+  }
+  
+  /* Days (1-31) */
+  .days {
+    padding: 50px 0;
+    background: rgb(203, 247, 255);
+    margin: 0;
+    width: 100%;
+    text-align: left;
+  }
+  
+  .days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.5%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: #3c529a;
+    left: 0px;
+  }
+  
+  /* Highlight the "current" day */
+  .days li .active {
+    padding: 5px;
+    background: #57a193;
+    color: white !important;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    text-align: center;
+  }
+  .wrapper {
+    width: 1170px;
+    margin: 0 auto;
+  }
+  header {
+    height: 100px;
+    background: #3c529a;
+    width: 100%;
+    z-index: 12;
+    position: fixed;
+  }
+  .logo {
+    width: 20%;
+    float: left;
+    line-height: 100px;
+  }
+  .logo a {
+    text-decoration: none;
+    font-size: 30px;
+    font-family: "Product Sans";
+    color: white;
+    letter-spacing: 5px;
+  }
+  nav {
+    float: right;
+    line-height: 100px;
+  }
+  nav a {
+    text-decoration: none;
+    font-family: "Product Sans";
+    letter-spacing: 4px;
+    font-size: 20px;
+    margin: 0 10px;
+    color: white;
+  }
+  .banner-area {
+    width: 100%;
+    height: 500px;
+    position: fixed;
+    top: 100px;
+    background: white;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+  }
+  .banner-area h2 {
+    padding-top: 8%;
+    font-size: 70px;
+    font-family: "Product Sans";
+    text-transform: uppercase;
+    color: #cbf7ff;
+  }
+  .banner-area p {
+    padding-top: 0;
+    font-size: 30px;
+    font-family: "Product Sans";
+    text-transform: uppercase;
+    color: #cbf7ff;
+  }
+  .content-area {
+    width: 100%;
+    position: relative;
+    top: 410px;
+    background: white;
+    height: 400px;
+  }
+  .content-area h2 {
+    font-family: "Product Sans";
+    letter-spacing: 4px;
+    padding-top: 30px;
+    font-size: 40px;
+    margin: 0;
+  }
+  .content-area p {
+    padding: 2% 0;
+    font-family: "Product Sans";
+    line-height: 30px;
+    color: black;
+  }
+  .confirmation {
+    width: 100%;
+    height: 100%;
+    background: #3c529a;
+  }
+  
+  .confirmation h2 {
+    font-size: 20px;
+    color: white;
+  }
+
+  #eventbody {
+    background-color: #57a193;
+    width: 500px;
+    height: 600px;
+    position: fixed;
+    bottom: 150px;
+    left: 31%;
+    border-radius: 10%;
+    display: "none";
+  }
+  
