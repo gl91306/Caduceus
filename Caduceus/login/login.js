@@ -1,5 +1,5 @@
 const logForm = document.getElementById("login-form");
-const logButton = document.getElementById("login-form-submit");
+const loginButton = document.getElementById("login-form-submit");
 const logError = document.getElementById("login-error-msg");
 
 loginButton.addEventListener("click", (e) => {
@@ -9,7 +9,7 @@ loginButton.addEventListener("click", (e) => {
 
     if (username === "user" && password === "web_dev") {
         alert("Welcome!");
-        location.reload();
+        window.location.href = "https://caduceus.zohebmopo.repl.co/intro/welcome.html";
     } else {
         logError.style.opacity = 1;
     }
